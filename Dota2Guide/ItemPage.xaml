@@ -1,0 +1,157 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Dota2Guide.ItemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI">
+
+
+    <ScrollViewer Height="Auto" HorizontalAlignment="Left" Margin="10,10,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="Auto" >
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <!--TitlePanel contains the name of the application and page title-->
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock x:Name="PageTitle" Text="Item Info" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            </StackPanel>
+
+            <!--ContentPanel - place additional content here-->
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel x:Name="infoStackPanel" Orientation="Horizontal" Margin="0,0,0,17" >
+                    <Grid>
+                        <!--Replace rectangle with image-->
+                        <Image VerticalAlignment="Top" Height="120" Width="120" Source="{Binding ImageSource}" Margin="12,0,9,0"/>
+                        <Image x:Name="goldImage" VerticalAlignment="Top" HorizontalAlignment="Left" Height="50" Width="50" Source="/Dota2Guide;component/MainAttributeImage/gold.png" Margin="12,130,9,0"/>
+                        <TextBlock Text="{Binding Price}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40,130,9,0" Style="{StaticResource PhoneTextSubtleStyle}"></TextBlock>
+                    </Grid>
+                    <StackPanel Width="311">
+
+                        <Grid Margin="10" x:Name="grid1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding AllAttributes}" Foreground="Yellow"></TextBlock>
+                            <TextBlock Grid.Row="0" Grid.Column="1" x:Name="allAttributesTextBlock" Style="{StaticResource PhoneTextSubtleStyle}">All Attributes</TextBlock>
+
+                            <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Strength}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="strengthTextBlock" Grid.Row="1" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Strength</TextBlock>
+
+                            <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Agility}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="agilityTextBlock" Grid.Row="2" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Agility</TextBlock>
+
+                            <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Intelligence}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="intelligenceTextBlock" Grid.Row="3" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Intelligence</TextBlock>
+
+                            <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Health}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="healthTextBlock" Grid.Row="4" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Health</TextBlock>
+
+                            <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Mana}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="manaTextBlock" Grid.Row="5" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Mana</TextBlock>
+
+                            <TextBlock Grid.Row="6" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding HPRegeneration}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="hpRegTextBlock" Grid.Row="6" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">HP Regeneration</TextBlock>
+
+                            <TextBlock Grid.Row="7" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding ManaRegeneration}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="manaRegTextBlock" Grid.Row="7" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Mana Regeneration</TextBlock>
+
+                            <TextBlock Grid.Row="8" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Damage}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="damageTextBlock" Grid.Row="8" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Damage</TextBlock>
+
+                            <TextBlock Grid.Row="9" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding MovementSpeed}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="movementSpeedTextBlock" Grid.Row="9" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Movement Speed</TextBlock>
+
+                            <TextBlock Grid.Row="10" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Armor}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="armorTextBlock" Grid.Row="10" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Armor</TextBlock>
+
+                            <TextBlock Grid.Row="11" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Evasion}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="evasionTextBlock" Grid.Row="11" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Evasion</TextBlock>
+
+                            <TextBlock Grid.Row="12" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding AttackSpeed}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="attackSpeedTextBlock" Grid.Row="12" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Attack Speed</TextBlock>
+
+                            <TextBlock Grid.Row="13" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding SpellResistance}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="spellResistanceTextBlock" Grid.Row="13" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Spell Resistance</TextBlock>
+
+                            <TextBlock Grid.Row="14" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding CastRange}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="castRangeTextBlock" Grid.Row="14" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Cast Range</TextBlock>
+
+                            <TextBlock Grid.Row="15" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding SelectedAttribute}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="selectedAttributeTextBlock" Grid.Row="15" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">Selected Attribute</TextBlock>
+
+                            <TextBlock Grid.Row="16" Grid.Column="0" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding AttackRange}" Foreground="Yellow"></TextBlock>
+                            <TextBlock x:Name="attackRangeTextBlock" Grid.Row="16" Grid.Column="1" Style="{StaticResource PhoneTextSubtleStyle}">AttackRange</TextBlock>
+
+                            <TextBlock Grid.Row="17" Grid.ColumnSpan="2" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding Extra}"  Margin="0,5,0,5"></TextBlock>
+
+                            <Image x:Name="manaImage" Grid.Row="18" Grid.Column="0" Source="/Dota2Guide;component/MainAttributeImage/mana.png" Width="30" Height="30" Margin="0,5,0,5"></Image>
+                            <TextBlock x:Name="manaCostTexBlock" Grid.Row="18" Grid.Column="1" Text="{Binding ManaCost}" Style="{StaticResource PhoneTextSubtleStyle}" VerticalAlignment="Center" FontSize="16" Margin="0,5,0,5"></TextBlock>
+
+                            <Image x:Name="coolDownImage" Grid.Row="19" Grid.Column="0" Source="/Dota2Guide;component/MainAttributeImage/cooldown.png" Width="30" Height="30" Margin="0,5,0,5"></Image>
+                            <TextBlock x:Name="coolDownTextBlock" Grid.Row="19" Grid.Column="1" Text="{Binding Cooldown}" Style="{StaticResource PhoneTextSubtleStyle}" VerticalAlignment="Center" FontSize="16" Margin="0,5,0,5"></TextBlock>
+                        </Grid>
+
+
+                        <TextBlock Text="Info" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" Foreground="SteelBlue" />
+                        <TextBlock x:Name="loreTextBlock" Text="{Binding Lore}" TextWrapping="Wrap" Margin="12,10,12,30" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                        <TextBlock x:Name="roleTextBlock" Text="{Binding Description}" TextWrapping="Wrap" Margin="12,10,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+                        <TextBlock x:Name="recipeTextBlock" Text="Recipe" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" Foreground="SteelBlue" ></TextBlock>
+                        <ListBox  Margin="0,20,0,0" x:Name="recipeListBox" Width="600" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,17" Tap="StackPanel_Tap">
+                                        <!--Replace rectangle with image-->
+                                        <Image VerticalAlignment="Top" Height="100" Width="100" Source="{Binding ImageSource}" Margin="12,0,9,0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <my:AdControl Grid.Row="2" AdUnitId="11176305" ApplicationId="15e7ca12-69a6-4def-b901-011243a09a60" Height="80" Name="adControl1" Width="480" />
+        </Grid>
+    </ScrollViewer>
+
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NEUTRALS>
+
+  <NEUTRAL>
+    
+    <NAME>Vhoul Assasin</NAME>
+    <IMAGE>vhoul-assasin.png</IMAGE>
+    <DAMAGE>33</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Vhoul Assassin camp is a small camp of Neutral creeps. It contains 3 Vhoul Assassins, and gives a total of 123 experience and 63-87 gold.</BIO>
+    
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Mud Golem</NAME>
+    <IMAGE>mud-golem.png</IMAGE>
+    <DAMAGE>31</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Golem camp is a medium camp of Neutral creeps. It contains 2 Mud Golems, and gives a total of 176 experience and 108-124 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Satyr Tormenter</NAME>
+    <IMAGE>satyr-tormenter.png</IMAGE>
+    <DAMAGE>52</DAMAGE>
+    <MOVESPEED>290</MOVESPEED>
+    <ARMOR>0</ARMOR>
+    <BIO>The Large Satyr camp is a large camp of Neutral creeps. It contains 1 Satyr Banisher, 1 Satyr Mindstealer and 1 Satyr Tormenter, and gives a total of 222 experience and 139-161 gold. It is similar to the Satyr Camp, which does not contain a Satyr Tormenter.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Roshan</NAME>
+    <IMAGE>roshan.png</IMAGE>
+    <DAMAGE>65+50</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>4+3</ARMOR>
+    <BIO>Roshan, sometimes also referred to as Roshan the Immortal, is the most powerful neutral creep in Dota 2. It is the first unit which spawns, right as the match is loaded and is the only npc which scales over time. During the early to mid game, it easily outmatches almost every hero in one vs one combat. Only very few heroes can take on him alone during the mid game, thanks to the nature of their skill set. Even in the late game, lots of heroes struggle fighting it one on one, since Roshan grows stronger as time passes.Roshan is not a creep which can just be farmed like the other neutral creep camps, fighting him is an important team decision, as it needs the correct timing and approach since it can decide the future of the match. Usually, it is fought as a team when it is safe to do so, meaning when the enemy team does not display a threat at the moment (for example after a successful team fight).</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Alpha Wolf</NAME>
+    <IMAGE>alpha-wolf.png</IMAGE>
+    <DAMAGE>31+9</DAMAGE>
+    <MOVESPEED>350</MOVESPEED>
+    <ARMOR>3</ARMOR>
+    <BIO>The Wolf camp is a medium camp of Neutral creeps. It contains 2 Giant Wolves and 1 Alpha Wolf, and gives a total of 212 experience and 81-97 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Giant Wolf</NAME>
+    <IMAGE>giant-wolf.png</IMAGE>
+    <DAMAGE>22+6</DAMAGE>
+    <MOVESPEED>350</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Wolf camp is a medium camp of Neutral creeps. It contains 2 Giant Wolves and 1 Alpha Wolf, and gives a total of 212 experience and 81-97 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ancient Black Dragon</NAME>
+    <IMAGE>ancient-black-dragon.png</IMAGE>
+    <DAMAGE>64</DAMAGE>
+    <MOVESPEED>300</MOVESPEED>
+    <ARMOR>6</ARMOR>
+    <BIO>The Dragon camp is an ancient camp of Neutral creeps. It contains 1 Ancient Black Dragon and 2 Ancient Black Drakes, and gives a total of 279 experience and 252-346 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ancient Black Drake</NAME>
+    <IMAGE>ancient-black-drake.png</IMAGE>
+    <DAMAGE>39</DAMAGE>
+    <MOVESPEED>350</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Dragon camp is an ancient camp of Neutral creeps. It contains 1 Ancient Black Dragon and 2 Ancient Black Drakes, and gives a total of 279 experience and 252-346 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ancient Granite Golem</NAME>
+    <IMAGE>ancient-granite-golem.png</IMAGE>
+    <DAMAGE>77-87</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>8</ARMOR>
+    <BIO>The Large Golem camp is an ancient camp of Neutral creeps. It contains 1 Ancient Granite Golem and 2 Ancient Rock Golems, and gives a total of 393 experience and 210-245 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ancient Rock Golem</NAME>
+    <IMAGE>ancient-granite-golem.png</IMAGE>
+    <DAMAGE>29-33</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>4</ARMOR>
+    <BIO>The Large Golem camp is an ancient camp of Neutral creeps. It contains 1 Ancient Granite Golem and 2 Ancient Rock Golems, and gives a total of 393 experience and 210-245 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ancient Rumblehide</NAME>
+    <IMAGE>ancient-rumblehide.png</IMAGE>
+    <DAMAGE>41-48</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Thunderhide camp is an ancient camp of Neutral creeps. It contains 1 Ancient Thunderhide and 2 Ancient Rumblehides, and gives a total of 393 experience and 247-271 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ancient Thunderhide</NAME>
+    <IMAGE>ancient-thunderhide.png</IMAGE>
+    <DAMAGE>74</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Thunderhide camp is an ancient camp of Neutral creeps. It contains 1 Ancient Thunderhide and 2 Ancient Rumblehides, and gives a total of 393 experience and 247-271 gold.</BIO>
+  </NEUTRAL>
+
+
+  <NEUTRAL>
+    <NAME>Centaur Conqueror</NAME>
+    <IMAGE>centaur-conqueror.png</IMAGE>
+    <DAMAGE>49-55</DAMAGE>
+    <MOVESPEED>320</MOVESPEED>
+    <ARMOR>4</ARMOR>
+    <BIO>The Centaur camp is both a medium and large camp of Neutral creeps. It contains 1 Centaur Conqueror and 1 Centaur Courser, and gives a total of 160 experience and 86-102 gold.</BIO>
+  </NEUTRAL>
+
+
+  <NEUTRAL>
+    <NAME>Centaur Courser</NAME>
+    <IMAGE>centaur-courser.png</IMAGE>
+    <DAMAGE>18-21</DAMAGE>
+    <MOVESPEED>350</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Centaur camp is both a medium and large camp of Neutral creeps. It contains 1 Centaur Conqueror and 1 Centaur Courser, and gives a total of 160 experience and 86-102 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Dark Troll Summoner</NAME>
+    <IMAGE>dark-troll-summoner.png</IMAGE>
+    <DAMAGE>49-54</DAMAGE>
+    <MOVESPEED>320</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Troll camp is a large camp of Neutral creeps. It contains 1 Dark Troll Summoner and 2 Hill Trolls, and gives a total of 243 experience and 106-128 gold. If the two Skeleton Warriors are summoned, the experience changes to 267 and the gold changes to 118-152.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Hill Troll</NAME>
+    <IMAGE>hill-troll.png</IMAGE>
+    <DAMAGE>24-27</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>0</ARMOR>
+    <BIO>The Troll camp is a large camp of Neutral creeps. It contains 1 Dark Troll Summoner and 2 Hill Trolls, and gives a total of 243 experience and 106-128 gold. If the two Skeleton Warriors are summoned, the experience changes to 267 and the gold changes to 118-152.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Fell Spirit</NAME>
+    <IMAGE>fell-spirit.png</IMAGE>
+    <DAMAGE>14</DAMAGE>
+    <MOVESPEED>350</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Ghost camp is a small camp of Neutral creeps. It contains 2 Fell Spirits and 1 Ghost, and gives a total of 144 experience and 70-86 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ghost</NAME>
+    <IMAGE>ghost.png</IMAGE>
+    <DAMAGE>47</DAMAGE>
+    <MOVESPEED>320</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Ghost camp is a small camp of Neutral creeps. It contains 2 Fell Spirits and 1 Ghost, and gives a total of 144 experience and 70-86 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Harpy Scout</NAME>
+    <IMAGE>harpy-scout.png</IMAGE>
+    <DAMAGE>32</DAMAGE>
+    <MOVESPEED>280</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Harpy camp is a small camp of Neutral creeps. It contains 2 Harpy Scout and 1 Harpy Stormcrafter, and gives a total of 144 experience and 81-91 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Harpy Stormcrafter</NAME>
+    <IMAGE>harpy-stormcrafter.png</IMAGE>
+    <DAMAGE>33</DAMAGE>
+    <MOVESPEED>310</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Harpy camp is a small camp of Neutral creeps. It contains 2 Harpy Scout and 1 Harpy Stormcrafter, and gives a total of 144 experience and 81-91 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Hellbear</NAME>
+    <IMAGE>hellbear.png</IMAGE>
+    <DAMAGE>39-44</DAMAGE>
+    <MOVESPEED>320</MOVESPEED>
+    <ARMOR>3</ARMOR>
+    <BIO>The Hellbear camp is a large camp of Neutral creeps. It contains 1 Hellbear and 1 Hellbear Smasher, and gives a total of 207 experience and 136-158 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Hellbear Smasher</NAME>
+    <IMAGE>hellbear-smasher.png</IMAGE>
+    <DAMAGE>49-55</DAMAGE>
+    <MOVESPEED>320</MOVESPEED>
+    <ARMOR>4</ARMOR>
+    <BIO>The Hellbear camp is a large camp of Neutral creeps. It contains 1 Hellbear and 1 Hellbear Smasher, and gives a total of 207 experience and 136-158 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Hill Troll Berserker</NAME>
+    <IMAGE>hill-troll-berserker.png</IMAGE>
+    <DAMAGE>32</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Hill Troll and Kobold camp is a small camp of Neutral creeps. It contains 2 Hill Troll Berserkers and 1 Kobold Foreman, and gives a total of 123 experience and 67-81 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Hill Troll Priest</NAME>
+    <IMAGE>hill-troll-priest.png</IMAGE>
+    <DAMAGE>28</DAMAGE>
+    <MOVESPEED>290</MOVESPEED>
+    <ARMOR>0</ARMOR>
+    <BIO>The Hill Troll camp is a small camp of Neutral creeps. It contains 2 Hill Troll Berserkers and 1 Hill Troll Priest, and gives a total of 123 experience and 65-77 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Kobold</NAME>
+    <IMAGE>kobold.png</IMAGE>
+    <DAMAGE>10</DAMAGE>
+    <MOVESPEED>302</MOVESPEED>
+    <ARMOR>0</ARMOR>
+    <BIO>The Kobold camp is a small camp of Neutral creeps. It contains 3 Kobolds, 1 Kobold Soldier and 1 Kobold Foreman, and gives a total of 141 experience and 61-75 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Kobold Foreman</NAME>
+    <IMAGE>kobold-foreman.png</IMAGE>
+    <DAMAGE>14</DAMAGE>
+    <MOVESPEED>330</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Kobold camp is a small camp of Neutral creeps. It contains 3 Kobolds, 1 Kobold Soldier and 1 Kobold Foreman, and gives a total of 141 experience and 61-75 gold.</BIO>
+  </NEUTRAL>
+
+  
+  <NEUTRAL>
+    <NAME>Ogre Bruiser</NAME>
+    <IMAGE>ogre-bruiser.png</IMAGE>
+    <DAMAGE>24-27</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Ogre camp is a medium camp of Neutral creeps. It contains 2 Ogre Bruisers and 1 Ogre Frostmage, and gives a total of 144 experience and 89-155 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Ogre Frostmage</NAME>
+    <IMAGE>ogre-frostmage.png</IMAGE>
+    <DAMAGE>24-27</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>0</ARMOR>
+    <BIO>The Ogre camp is a medium camp of Neutral creeps. It contains 2 Ogre Bruisers and 1 Ogre Frostmage, and gives a total of 144 experience and 89-155 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Satyr Banisher</NAME>
+    <IMAGE>satyr-banisher.png</IMAGE>
+    <DAMAGE>7-10</DAMAGE>
+    <MOVESPEED>330</MOVESPEED>
+    <ARMOR>0</ARMOR>
+    <BIO>The Satyr camp is a medium camp of Neutral creeps. It contains 2 Satyr Banishers and 2 Satyr Mindstealer, and gives a total of 206 experience and 84-100 gold. It is similar to the Large Satyr Camp, but does not contain a Satyr Tormenter.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Satyr Mindstealer</NAME>
+    <IMAGE>satyr-mindstealer.png</IMAGE>
+    <DAMAGE>24-27</DAMAGE>
+    <MOVESPEED>270</MOVESPEED>
+    <ARMOR>1</ARMOR>
+    <BIO>The Satyr camp is a medium camp of Neutral creeps. It contains 2 Satyr Banishers and 2 Satyr Mindstealer, and gives a total of 206 experience and 84-100 gold. It is similar to the Large Satyr Camp, but does not contain a Satyr Tormenter.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Wildwing</NAME>
+    <IMAGE>wildwing.png</IMAGE>
+    <DAMAGE>20-25</DAMAGE>
+    <MOVESPEED>300</MOVESPEED>
+    <ARMOR>2</ARMOR>
+    <BIO>The Wildwing camp is a large camp of Neutral creeps. It contains 2 Wildwings and 1 Wildwing Ripper, and gives a total of 169 experience and 97-127 gold.</BIO>
+  </NEUTRAL>
+
+  <NEUTRAL>
+    <NAME>Wildwing Ripper</NAME>
+    <IMAGE>wildwing-ripper.png</IMAGE>
+    <DAMAGE>50-56</DAMAGE>
+    <MOVESPEED>320</MOVESPEED>
+    <ARMOR>4</ARMOR>
+    <BIO>The Wildwing camp is a large camp of Neutral creeps. It contains 2 Wildwings and 1 Wildwing Ripper, and gives a total of 169 experience and 97-127 gold.</BIO>
+  </NEUTRAL>
+  
+  
+  
+</NEUTRALS>

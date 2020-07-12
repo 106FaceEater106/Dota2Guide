@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{347DDAEC-D8FF-47C0-BB67-B9D3FEBCBEC3}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dota2Guide</RootNamespace>
+    <AssemblyName>Dota2Guide</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Dota2Guide.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Dota2Guide.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdDealsSDKWP7">
+      <HintPath>..\..\..\..\..\Desktop\AdDeals-Windows-apps-SDK-v2.2\WPhone 7.0+ Silverlight-XNA apps\WP7 SDK v1.6.2 Wall only\AdDealsSDKWP7.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DotaImage.cs" />
+    <Compile Include="Classes\BizObject.cs" />
+    <Compile Include="Classes\DotaCharacter.cs" />
+    <Compile Include="Classes\DotaCreep.cs" />
+    <Compile Include="Classes\DotaHero.cs" />
+    <Compile Include="Classes\DotaItem.cs" />
+    <Compile Include="Classes\DotaSkill.cs" />
+    <Compile Include="Classes\Hero.cs" />
+    <Compile Include="Classes\Item.cs" />
+    <Compile Include="Classes\Language.cs" />
+    <Compile Include="Classes\Neutral.cs" />
+    <Compile Include="Classes\Skill.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="HeroInfoPage.xaml.cs">
+      <DependentUpon>HeroInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HeroPage.xaml.cs">
+      <DependentUpon>HeroPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemPage.xaml.cs">
+      <DependentUpon>ItemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NeutralPage.xaml.cs">
+      <DependentUpon>NeutralPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleItem.cs" />
+    <Compile Include="SampleSkill.cs" />
+    <Compile Include="SkillPage.xaml.cs">
+      <DependentUpon>SkillPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="HeroInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HeroPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NeutralPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SkillPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PanoramaBackground.png" />
+    <Resource Include="HeroImage\abaddon.png" />
+    <Resource Include="HeroImage\alchemist.png" />
+    <Resource Include="HeroImage\anti-mage.png" />
+    <Resource Include="HeroImage\beastmaster.png" />
+    <Resource Include="HeroImage\brewmaster.png" />
+    <Resource Include="HeroImage\bristleback.png" />
+    <Resource Include="HeroImage\centaur-warrunner.png" />
+    <Resource Include="HeroImage\clockwerk.png" />
+    <Resource Include="HeroImage\crystal-maiden.png" />
+    <Resource Include="HeroImage\dragon-knight.png" />
+    <Resource Include="HeroImage\drow-ranger.png" />
+    <Resource Include="HeroImage\earth-spirit.png" />
+    <Resource Include="HeroImage\earthshaker.png" />
+    <Resource Include="HeroImage\elder-titan.png" />
+    <Resource Include="HeroImage\huskar.png" />
+    <Resource Include="HeroImage\juggernaut.png" />
+    <Resource Include="HeroImage\kunkka.png" />
+    <Resource Include="HeroImage\legion-commander.png" />
+    <Resource Include="HeroImage\lifestealer.png" />
+    <Resource Include="HeroImage\omniknight.png" />
+    <Resource Include="HeroImage\phoenix.png" />
+    <Resource Include="HeroImage\puck.png" />
+    <Resource Include="HeroImage\sven.png" />
+    <Resource Include="HeroImage\timbersaw.png" />
+    <Resource Include="HeroImage\tiny.png" />
+    <Resource Include="HeroImage\treant-protector.png" />
+    <Resource Include="HeroImage\tusk.png" />
+    <Resource Include="HeroImage\io.png" />
+    <Resource Include="ItemImage\band-of-elvenskin.png" />
+    <Resource Include="ItemImage\belt-of-elves.png" />
+    <Resource Include="ItemImage\belt-of-strength.png" />
+    <Resource Include="ItemImage\blade-of-alacrity.png" />
+    <Resource Include="ItemImage\blades-of-attack.png" />
+    <Resource Include="ItemImage\blink-dagger.png" />
+    <Resource Include="ItemImage\boots-of-speed.png" />
+    <Resource Include="ItemImage\bottle.png" />
+    <Resource Include="ItemImage\bracer.png" />
+    <Resource Include="ItemImage\iron-branch.png" />
+    <Resource Include="ItemImage\broadsword.png" />
+    <Resource Include="ItemImage\chainmail.png" />
+    <Resource Include="ItemImage\circlet.png" />
+    <Resource Include="ItemImage\clarity.png" />
+    <Resource Include="ItemImage\claymore.png" />
+    <Resource Include="ItemImage\cloak.png" />
+    <Resource Include="ItemImage\animal-courier.png" />
+    <Resource Include="ItemImage\dust-of-appearance.png" />
+    <Resource Include="ItemImage\healing-salve.png" />
+    <Resource Include="ItemImage\flying-courier.png" />
+    <Resource Include="ItemImage\gauntlets-of-strength.png" />
+    <Resource Include="ItemImage\gem-of-true-sight.png" />
+    <Resource Include="ItemImage\ghost-scepter.png" />
+    <Resource Include="ItemImage\gloves-of-haste.png" />
+    <Resource Include="ItemImage\helm-of-iron-will.png" />
+    <Resource Include="ItemImage\javelin.png" />
+    <Resource Include="ItemImage\morbid-mask.png" />
+    <Resource Include="ItemImage\magic-stick.png" />
+    <Resource Include="ItemImage\magic-wand.png" />
+    <Resource Include="ItemImage\mantle-of-intelligence.png" />
+    <Resource Include="ItemImage\mithril-hammer.png" />
+    <Resource Include="ItemImage\null-talisman.png" />
+    <Resource Include="ItemImage\ogre-club.png" />
+    <Resource Include="ItemImage\platemail.png" />
+    <Resource Include="ItemImage\poor-mans-shield.png" />
+    <Resource Include="ItemImage\quarterstaff.png" />
+    <Resource Include="ItemImage\quelling-blade.png" />
+    <Resource Include="ItemImage\ring-of-protection.png" />
+    <Resource Include="ItemImage\ring-of-regen.png" />
+    <Resource Include="ItemImage\robe-of-the-magi.png" />
+    <Resource Include="ItemImage\shadow-amulet.png" />
+    <Resource Include="ItemImage\slippers-of-agility.png" />
+    <Resource Include="ItemImage\smoke-of-deceit.png" />
+    <Resource Include="ItemImage\sages-mask.png" />
+    <Resource Include="ItemImage\staff-of-wizardry.png" />
+    <Resource Include="ItemImage\stout-shield.png" />
+    <Resource Include="ItemImage\talisman-of-evasion.png" />
+    <Resource Include="ItemImage\tango.png" />
+    <Resource Include="ItemImage\town-portal-scroll.png" />
+    <Resource Include="ItemImage\ultimate-orb.png" />
+    <Resource Include="ItemImage\observer-ward.png" />
+    <Resource Include="ItemImage\sentry-ward.png" />
+    <Resource Include="ItemImage\wraith-band.png" />
+    <Resource Include="MainAttributeImage\agility.png" />
+    <Resource Include="MainAttributeImage\armor.png" />
+    <Resource Include="MainAttributeImage\cooldown.png" />
+    <Resource Include="MainAttributeImage\damage.png" />
+    <Resource Include="MainAttributeImage\gold.png" />
+    <Resource Include="MainAttributeImage\intelligence.png" />
+    <Resource Include="MainAttributeImage\mana.png" />
+    <Resource Include="MainAttributeImage\movespeed.png" />
+    <Resource Include="MainAttributeImage\strength.png" />
+    <Resource Include="SkillImage\earthshaker-aftershock.png" />
+    <Resource Include="SkillImage\earthshaker-echo-slam.png" />
+    <Resource Include="SkillImage\earthshaker-enchant-totem.png" />
+    <Resource Include="SkillImage\earthshaker-fissure.png" />
+    <Resource Include="Background.png" />
+    <Content Include="heroes2.xml" />
+    <Resource Include="HeroImage\arc-warden.png" />
+    <Content Include="HeroXML\heroes_en.xml" />
+    <Resource Include="ItemImage\faerie-fire.png" />
+    <Resource Include="ItemImage\silver-edge.png" />
+    <Resource Include="ItemImage\dragon-lance.png" />
+    <Resource Include="ItemImage\guardian-greaves.png" />
+    <Resource Include="ItemImage\octarine-core.png" />
+    <Resource Include="ItemImage\wind-lace.png" />
+    <Resource Include="ItemImage\glimmer-cape.png" />
+    <Resource Include="ItemImage\boots-of-travel-level-2.png" />
+    <Resource Include="ItemImage\blight-stone.png" />
+    <Resource Include="ItemImage\bloodthorn.png" />
+    <Resource Include="ItemImage\hurricane-pike.png" />
+    <Resource Include="ItemImage\iron-talon.png" />
+    <Resource Include="ItemImage\solar-crest.png" />
+    <Resource Include="ItemImage\lotus-orb.png" />
+    <Resource Include="ItemImage\enchanted-mango.png" />
+    <Resource Include="ItemImage\infused-raindrop.png" />
+    <Resource Include="ItemImage\river-vial-chrome.png" />
+    <Resource Include="ItemImage\river-vial-dry.png" />
+    <Resource Include="ItemImage\river-vial-electrified.png" />
+    <Resource Include="ItemImage\river-vial-slime.png" />
+    <Resource Include="ItemImage\river-vial-oil.png" />
+    <Resource Include="ItemImage\river-vial-potion.png" />
+    <Resource Include="ItemImage\river-vial-blood.png" />
+    <Resource Include="ItemImage\tome-of-knowledge.png" />
+    <Resource Include="ItemImage\aether-lens.png" />
+    <Resource Include="ItemImage\echo-sabre.png" />
+    <Resource Include="ItemImage\cheese.png" />
+    <Resource Include="ItemImage\dagon-level-2.png" />
+    <Resource Include="ItemImage\dagon-level-3.png" />
+    <Resource Include="ItemImage\dagon-level-4.png" />
+    <Resource Include="ItemImage\dagon-level-5.png" />
+    <Resource Include="ItemImage\diffusal-blade-level-2.png" />
+    <Resource Include="ItemImage\moon-shard.png" />
+    <Resource Include="ItemImage\necronomicon-level-2.png" />
+    <Resource Include="ItemImage\necronomicon-level-3.png" />
+    <Resource Include="ItemImage\observer-and-sentry-wards.png" />
+    <Resource Include="ItemImage\tango-shared.png" />
+    <Content Include="ItemXML\items_en.xml" />
+    <Resource Include="SkillImage\arc-warden-flux.png" />
+    <Resource Include="SkillImage\arc-warden-magnetic-field.png" />
+    <Resource Include="SkillImage\arc-warden-spark-wraith.png" />
+    <Resource Include="SkillImage\arc-warden-tempest-double.png" />
+    <Resource Include="SkillImage\death-prophet-spirit-siphon.png" />
+    <Resource Include="SkillImage\faceless-void-time-dilation.png" />
+    <Resource Include="SkillImage\lifestealer-assimilate.png" />
+    <Resource Include="SkillImage\lifestealer-eject.png" />
+    <Resource Include="SkillImage\lifestealer-control.png" />
+    <Resource Include="SkillImage\lone-druid-savage-roar.png" />
+    <Resource Include="SkillImage\morphling-hybrid.png" />
+    <Resource Include="SkillImage\nyx-assassin-burrow.png" />
+    <Resource Include="SkillImage\nyx-assassin-unburrow.png" />
+    <Resource Include="SkillImage\riki-tricks-of-the-trade.png" />
+    <Resource Include="SkillImage\tusk-walrus-kick.png" />
+    <Content Include="SkillXML\skills_en.xml" />
+    <Content Include="Images\appbar.dollar.png" />
+    <Content Include="ApplicationIcon.png" />
+    <Content Include="heroes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="ItemImage\oblivion-staff.png" />
+    <Resource Include="ItemImage\perseverance.png" />
+    <Resource Include="ItemImage\phase-boots.png" />
+    <Resource Include="ItemImage\power-treads.png" />
+    <Resource Include="ItemImage\soul-ring.png" />
+    <Resource Include="ItemImage\buckler.png" />
+    <Resource Include="ItemImage\hand-of-midas.png" />
+    <Resource Include="ItemImage\headdress.png" />
+    <Resource Include="ItemImage\ring-of-basilius.png" />
+    <Resource Include="ItemImage\boots-of-travel.png" />
+    <Resource Include="ItemImage\urn-of-shadows.png" />
+    <Resource Include="ItemImage\arcane-boots.png" />
+    <Resource Include="ItemImage\drum-of-endurance.png" />
+    <Resource Include="ItemImage\medallion-of-courage.png" />
+    <Resource Include="ItemImage\ring-of-aquila.png" />
+    <Resource Include="ItemImage\tranquil-boots.png" />
+    <Resource Include="ItemImage\vladmirs-offering.png" />
+    <Resource Include="ItemImage\euls-scepter-of-divinity.png" />
+    <Resource Include="ItemImage\dagon.png" />
+    <Resource Include="ItemImage\force-staff.png" />
+    <Resource Include="ItemImage\mekansm.png" />
+    <Resource Include="ItemImage\necronomicon.png" />
+    <Resource Include="ItemImage\pipe-of-insight.png" />
+    <Resource Include="ItemImage\orchid-malevolence.png" />
+    <Resource Include="ItemImage\refresher-orb.png" />
+    <Resource Include="ItemImage\rod-of-atos.png" />
+    <Resource Include="ItemImage\scythe-of-vyse.png" />
+    <Resource Include="ItemImage\aghanims-scepter.png" />
+    <Resource Include="ItemImage\veil-of-discord.png" />
+    <Resource Include="ItemImage\armlet-of-mordiggian.png" />
+    <Resource Include="ItemImage\skull-basher.png" />
+    <Resource Include="ItemImage\battle-fury.png" />
+    <Resource Include="ItemImage\ethereal-blade.png" />
+    <Resource Include="ItemImage\shadow-blade.png" />
+    <Resource Include="ItemImage\crystalys.png" />
+    <Resource Include="ItemImage\abyssal-blade.png" />
+    <Resource Include="ItemImage\butterfly.png" />
+    <Resource Include="ItemImage\daedalus.png" />
+    <Resource Include="ItemImage\monkey-king-bar.png" />
+    <Resource Include="ItemImage\radiance.png" />
+    <Resource Include="ItemImage\divine-rapier.png" />
+    <Resource Include="ItemImage\black-king-bar.png" />
+    <Resource Include="ItemImage\blade-mail.png" />
+    <Resource Include="ItemImage\hood-of-defiance.png" />
+    <Resource Include="ItemImage\shivas-guard.png" />
+    <Resource Include="ItemImage\soul-booster.png" />
+    <Resource Include="ItemImage\vanguard.png" />
+    <Resource Include="ItemImage\assault-cuirass.png" />
+    <Resource Include="ItemImage\bloodstone.png" />
+    <Resource Include="ItemImage\crimson-guard.png" />
+    <Resource Include="ItemImage\heart-of-tarrasque.png" />
+    <Resource Include="ItemImage\manta-style.png" />
+    <Resource Include="ItemImage\linkens-sphere.png" />
+    <Resource Include="ItemImage\diffusal-blade.png" />
+    <Resource Include="ItemImage\helm-of-the-dominator.png" />
+    <Resource Include="ItemImage\maelstrom.png" />
+    <Resource Include="ItemImage\mask-of-madness.png" />
+    <Resource Include="ItemImage\sange.png" />
+    <Resource Include="ItemImage\yasha.png" />
+    <Resource Include="ItemImage\desolator.png" />
+    <Resource Include="ItemImage\heavens-halberd.png" />
+    <Resource Include="ItemImage\mjollnir.png" />
+    <Resource Include="ItemImage\sange-and-yasha.png" />
+    <Resource Include="ItemImage\satanic.png" />
+    <Resource Include="ItemImage\eye-of-skadi.png" />
+    <Resource Include="ItemImage\demon-edge.png" />
+    <Resource Include="ItemImage\eaglesong.png" />
+    <Resource Include="ItemImage\hyperstone.png" />
+    <Resource Include="ItemImage\reaver.png" />
+    <Resource Include="ItemImage\sacred-relic.png" />
+    <Resource Include="ItemImage\ring-of-health.png" />
+    <Resource Include="ItemImage\energy-booster.png" />
+    <Resource Include="ItemImage\mystic-staff.png" />
+    <Resource Include="ItemImage\orb-of-venom.png" />
+    <Resource Include="ItemImage\point-booster.png" />
+    <Resource Include="ItemImage\vitality-booster.png" />
+    <Resource Include="ItemImage\void-stone.png" />
+    <Resource Include="ItemImage\aegis-of-the-immortal.png" />
+    <Resource Include="HeroImage\axe.png" />
+    <Resource Include="HeroImage\pudge.png" />
+    <Resource Include="HeroImage\sand-king.png" />
+    <Resource Include="HeroImage\slardar.png" />
+    <Resource Include="HeroImage\tidehunter.png" />
+    <Resource Include="HeroImage\wraith-king.png" />
+    <Resource Include="HeroImage\night-stalker.png" />
+    <Resource Include="HeroImage\spirit-breaker.png" />
+    <Resource Include="HeroImage\lycan.png" />
+    <Resource Include="HeroImage\chaos-knight.png" />
+    <Resource Include="HeroImage\undying.png" />
+    <Resource Include="HeroImage\magnus.png" />
+    <Resource Include="HeroImage\doom.png" />
+    <Resource Include="HeroImage\mirana.png" />
+    <Resource Include="HeroImage\morphling.png" />
+    <Resource Include="HeroImage\phantom-lancer.png" />
+    <Resource Include="HeroImage\riki.png" />
+    <Resource Include="HeroImage\vengeful-spirit.png" />
+    <Resource Include="HeroImage\bounty-hunter.png" />
+    <Resource Include="HeroImage\gyrocopter.png" />
+    <Resource Include="HeroImage\luna.png" />
+    <Resource Include="HeroImage\sniper.png" />
+    <Resource Include="HeroImage\templar-assassin.png" />
+    <Resource Include="HeroImage\ursa.png" />
+    <Resource Include="HeroImage\ember-spirit.png" />
+    <Resource Include="HeroImage\lone-druid.png" />
+    <Resource Include="HeroImage\naga-siren.png" />
+    <Resource Include="HeroImage\troll-warlord.png" />
+    <Resource Include="HeroImage\bloodseeker.png" />
+    <Resource Include="HeroImage\faceless-void.png" />
+    <Resource Include="HeroImage\phantom-assassin.png" />
+    <Resource Include="HeroImage\razor.png" />
+    <Resource Include="HeroImage\shadow-fiend.png" />
+    <Resource Include="HeroImage\venomancer.png" />
+    <Resource Include="HeroImage\broodmother.png" />
+    <Resource Include="HeroImage\clinkz.png" />
+    <Resource Include="HeroImage\meepo.png" />
+    <Resource Include="HeroImage\spectre.png" />
+    <Resource Include="HeroImage\viper.png" />
+    <Resource Include="HeroImage\weaver.png" />
+    <Resource Include="HeroImage\medusa.png" />
+    <Resource Include="HeroImage\nyx-assassin.png" />
+    <Resource Include="HeroImage\slark.png" />
+    <Resource Include="HeroImage\terrorblade.png" />
+    <Resource Include="HeroImage\lina.png" />
+    <Resource Include="HeroImage\shadow-shaman.png" />
+    <Resource Include="HeroImage\storm-spirit.png" />
+    <Resource Include="HeroImage\tinker.png" />
+    <Resource Include="HeroImage\windranger.png" />
+    <Resource Include="HeroImage\zeus.png" />
+    <Resource Include="HeroImage\chen.png" />
+    <Resource Include="HeroImage\enchantress.png" />
+    <Resource Include="HeroImage\jakiro.png" />
+    <Resource Include="HeroImage\natures-prophet.png" />
+    <Resource Include="HeroImage\ogre-magi.png" />
+    <Resource Include="HeroImage\silencer.png" />
+    <Resource Include="HeroImage\disruptor.png" />
+    <Resource Include="HeroImage\keeper-of-the-light.png" />
+    <Resource Include="HeroImage\oracle.png" />
+    <Resource Include="HeroImage\rubick.png" />
+    <Resource Include="HeroImage\skywrath-mage.png" />
+    <Resource Include="HeroImage\techies.png" />
+    <Resource Include="HeroImage\bane.png" />
+    <Resource Include="HeroImage\enigma.png" />
+    <Resource Include="HeroImage\lich.png" />
+    <Resource Include="HeroImage\lion.png" />
+    <Resource Include="HeroImage\necrophos.png" />
+    <Resource Include="HeroImage\witch-doctor.png" />
+    <Resource Include="HeroImage\dazzle.png" />
+    <Resource Include="HeroImage\death-prophet.png" />
+    <Resource Include="HeroImage\leshrac.png" />
+    <Resource Include="HeroImage\pugna.png" />
+    <Resource Include="HeroImage\queen-of-pain.png" />
+    <Resource Include="HeroImage\warlock.png" />
+    <Resource Include="HeroImage\ancient-apparition.png" />
+    <Resource Include="HeroImage\batrider.png" />
+    <Resource Include="HeroImage\dark-seer.png" />
+    <Resource Include="HeroImage\invoker.png" />
+    <Resource Include="HeroImage\outworld-devourer.png" />
+    <Resource Include="HeroImage\shadow-demon.png" />
+    <Resource Include="HeroImage\visage.png" />
+    <Resource Include="ItemImage\recipe.png" />
+    <Resource Include="HeroImage\winter-wyvern.png" />
+    <Content Include="items.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="SkillImage\sven-gods-strength.png" />
+    <Resource Include="SkillImage\sven-great-cleave.png" />
+    <Resource Include="SkillImage\sven-storm-hammer.png" />
+    <Resource Include="SkillImage\sven-warcry.png" />
+    <Resource Include="SkillImage\tiny-avalanche.png" />
+    <Resource Include="SkillImage\tiny-craggy-exterior.png" />
+    <Resource Include="SkillImage\tiny-grow.png" />
+    <Resource Include="SkillImage\tiny-toss.png" />
+    <Resource Include="SkillImage\kunkka-ghostship.png" />
+    <Resource Include="SkillImage\kunkka-return.png" />
+    <Resource Include="SkillImage\kunkka-tidebringer.png" />
+    <Resource Include="SkillImage\kunkka-torrent.png" />
+    <Resource Include="SkillImage\kunkka-x-marks-the-spot.png" />
+    <Resource Include="SkillImage\beastmaster-call-of-the-wild-boar.png" />
+    <Resource Include="SkillImage\beastmaster-call-of-the-wild-hawk.png" />
+    <Resource Include="SkillImage\beastmaster-inner-beast.png" />
+    <Resource Include="SkillImage\beastmaster-primal-roar.png" />
+    <Resource Include="SkillImage\beastmaster-wild-axes.png" />
+    <Resource Include="SkillImage\dragon-knight-breathe-fire.png" />
+    <Resource Include="SkillImage\dragon-knight-dragon-blood.png" />
+    <Resource Include="SkillImage\dragon-knight-dragon-tail.png" />
+    <Resource Include="SkillImage\dragon-knight-elder-dragon-form.png" />
+    <Resource Include="SkillImage\clockwerk-battery-assault.png" />
+    <Resource Include="SkillImage\clockwerk-hookshot.png" />
+    <Resource Include="SkillImage\clockwerk-power-cogs.png" />
+    <Resource Include="SkillImage\clockwerk-rocket-flare.png" />
+    <Resource Include="SkillImage\omniknight-degen-aura.png" />
+    <Resource Include="SkillImage\omniknight-guardian-angel.png" />
+    <Resource Include="SkillImage\omniknight-purification.png" />
+    <Resource Include="SkillImage\omniknight-repel.png" />
+    <Resource Include="SkillImage\huskar-berserkers-blood.png" />
+    <Resource Include="SkillImage\huskar-burning-spear.png" />
+    <Resource Include="SkillImage\huskar-inner-vitality.png" />
+    <Resource Include="SkillImage\huskar-life-break.png" />
+    <Resource Include="SkillImage\alchemist-acid-spray.png" />
+    <Resource Include="SkillImage\alchemist-chemical-rage.png" />
+    <Resource Include="SkillImage\alchemist-greevils-greed.png" />
+    <Resource Include="SkillImage\alchemist-unstable-concoction.png" />
+    <Resource Include="SkillImage\alchemist-unstable-concoction-throw.png" />
+    <Resource Include="SkillImage\brewmaster-drunken-brawler.png" />
+    <Resource Include="SkillImage\brewmaster-drunken-haze.png" />
+    <Resource Include="SkillImage\brewmaster-primal-split.png" />
+    <Resource Include="SkillImage\brewmaster-thunder-clap.png" />
+    <Resource Include="SkillImage\treant-protector-eyes-in-the-forest.png" />
+    <Resource Include="SkillImage\treant-protector-leech-seed.png" />
+    <Resource Include="SkillImage\treant-protector-living-armor.png" />
+    <Resource Include="SkillImage\treant-protector-natures-guise.png" />
+    <Resource Include="SkillImage\treant-protector-overgrowth.png" />
+    <Resource Include="SkillImage\io-overcharge.png" />
+    <Resource Include="SkillImage\io-spirits.png" />
+    <Resource Include="SkillImage\io-break-tether.png" />
+    <Resource Include="SkillImage\io-tether.png" />
+    <Resource Include="SkillImage\io-relocate.png" />
+    <Resource Include="SkillImage\io-spirits-in.png" />
+    <Resource Include="SkillImage\io-spirits-out.png" />
+    <Resource Include="SkillImage\centaur-warrunner-double-edge.png" />
+    <Resource Include="SkillImage\centaur-warrunner-hoof-stomp.png" />
+    <Resource Include="SkillImage\centaur-warrunner-return.png" />
+    <Resource Include="SkillImage\centaur-warrunner-stampede.png" />
+    <Resource Include="SkillImage\timbersaw-chakram2.png" />
+    <Resource Include="SkillImage\timbersaw-reactive-armor.png" />
+    <Resource Include="SkillImage\timbersaw-timber-chain.png" />
+    <Resource Include="SkillImage\timbersaw-whirling-death.png" />
+    <Resource Include="SkillImage\timbersaw-return-chakram.png" />
+    <Resource Include="SkillImage\timbersaw-chakram.png" />
+    <Resource Include="SkillImage\timbersaw-return-chakram-2.png" />
+    <Resource Include="SkillImage\bristleback-bristleback.png" />
+    <Resource Include="SkillImage\bristleback-quill-spray.png" />
+    <Resource Include="SkillImage\bristleback-viscous-nasal-goo.png" />
+    <Resource Include="SkillImage\bristleback-warpath.png" />
+    <Resource Include="SkillImage\tusk-frozen-sigil.png" />
+    <Resource Include="SkillImage\tusk-ice-shards.png" />
+    <Resource Include="SkillImage\tusk-snowball.png" />
+    <Resource Include="SkillImage\tusk-walrus-punch!.png" />
+    <Resource Include="SkillImage\tusk-launch-snowball.png" />
+    <Resource Include="SkillImage\elder-titan-ancestral-spirit.png" />
+    <Resource Include="SkillImage\elder-titan-echo-stomp.png" />
+    <Resource Include="SkillImage\elder-titan-natural-order.png" />
+    <Resource Include="SkillImage\elder-titan-return-astral-spirit.png" />
+    <Resource Include="SkillImage\elder-titan-earth-splitter.png" />
+    <Resource Include="SkillImage\legion-commander-duel.png" />
+    <Resource Include="SkillImage\legion-commander-moment-of-courage.png" />
+    <Resource Include="SkillImage\legion-commander-overwhelming-odds.png" />
+    <Resource Include="SkillImage\legion-commander-press-the-attack.png" />
+    <Resource Include="SkillImage\earth-spirit-boulder-smash.png" />
+    <Resource Include="SkillImage\earth-spirit-geomagnetic-grip.png" />
+    <Resource Include="SkillImage\earth-spirit-rolling-boulder.png" />
+    <Resource Include="SkillImage\earth-spirit-stone-remnant.png" />
+    <Resource Include="SkillImage\earth-spirit-magnetize.png" />
+    <Resource Include="SkillImage\earth-spirit-enchant-remnant.png" />
+    <Resource Include="SkillImage\phoenix-fire-spirits.png" />
+    <Resource Include="SkillImage\phoenix-icarus-dive.png" />
+    <Resource Include="SkillImage\phoenix-sun-ray.png" />
+    <Resource Include="SkillImage\phoenix-supernova.png" />
+    <Resource Include="SkillImage\phoenix-stop-icarus-dive.png" />
+    <Resource Include="SkillImage\phoenix-launch-fire-spirit.png" />
+    <Resource Include="SkillImage\phoenix-stop-sun-ray.png" />
+    <Resource Include="SkillImage\phoenix-toggle-movement.png" />
+    <Resource Include="SkillImage\axe-battle-hunger.png" />
+    <Resource Include="SkillImage\axe-berserkers-call.png" />
+    <Resource Include="SkillImage\axe-counter-helix.png" />
+    <Resource Include="SkillImage\axe-culling-blade.png" />
+    <Resource Include="SkillImage\pudge-dismember.png" />
+    <Resource Include="SkillImage\pudge-flesh-heap.png" />
+    <Resource Include="SkillImage\pudge-meat-hook.png" />
+    <Resource Include="SkillImage\pudge-rot.png" />
+    <Resource Include="SkillImage\sand-king-burrowstrike.png" />
+    <Resource Include="SkillImage\sand-king-caustic-finale.png" />
+    <Resource Include="SkillImage\sand-king-epicenter.png" />
+    <Resource Include="SkillImage\sand-king-sand-storm.png" />
+    <Resource Include="SkillImage\slardar-amplify-damage.png" />
+    <Resource Include="SkillImage\slardar-bash.png" />
+    <Resource Include="SkillImage\slardar-slithereen-crush.png" />
+    <Resource Include="SkillImage\slardar-sprint.png" />
+    <Resource Include="SkillImage\tidehunter-anchor-smash.png" />
+    <Resource Include="SkillImage\tidehunter-gush.png" />
+    <Resource Include="SkillImage\tidehunter-kraken-shell.png" />
+    <Resource Include="SkillImage\tidehunter-ravage.png" />
+    <Resource Include="SkillImage\wraith-king-wraithfire-blast.png" />
+    <Resource Include="SkillImage\wraith-king-mortal-strike.png" />
+    <Resource Include="SkillImage\wraith-king-reincarnation.png" />
+    <Resource Include="SkillImage\wraith-king-vampiric-aura.png" />
+    <Resource Include="SkillImage\lifestealer-feast.png" />
+    <Resource Include="SkillImage\lifestealer-infest.png" />
+    <Resource Include="SkillImage\lifestealer-open-wounds.png" />
+    <Resource Include="SkillImage\lifestealer-rage.png" />
+    <Resource Include="SkillImage\lifestealer-consume.png" />
+    <Resource Include="SkillImage\night-stalker-crippling-fear.png" />
+    <Resource Include="SkillImage\night-stalker-darkness.png" />
+    <Resource Include="SkillImage\night-stalker-hunter-in-the-night.png" />
+    <Resource Include="SkillImage\night-stalker-void.png" />
+    <Resource Include="SkillImage\doom-devour.png" />
+    <Resource Include="SkillImage\doom-doom.png" />
+    <Resource Include="SkillImage\doom-infernal-blade.png" />
+    <Resource Include="SkillImage\doom-scorched-earth.png" />
+    <Resource Include="SkillImage\spirit-breaker-charge-of-darkness.png" />
+    <Resource Include="SkillImage\spirit-breaker-empowering-haste.png" />
+    <Resource Include="SkillImage\spirit-breaker-greater-bash.png" />
+    <Resource Include="SkillImage\spirit-breaker-nether-strike.png" />
+    <Resource Include="SkillImage\lycan-feral-impulse.png" />
+    <Resource Include="SkillImage\lycan-howl.png" />
+    <Resource Include="SkillImage\lycan-shapeshift.png" />
+    <Resource Include="SkillImage\lycan-summon-wolves.png" />
+    <Resource Include="SkillImage\chaos-knight-chaos-bolt.png" />
+    <Resource Include="SkillImage\chaos-knight-chaos-strike.png" />
+    <Resource Include="SkillImage\chaos-knight-phantasm.png" />
+    <Resource Include="SkillImage\chaos-knight-reality-rift.png" />
+    <Resource Include="SkillImage\undying-decay.png" />
+    <Resource Include="SkillImage\undying-flesh-golem.png" />
+    <Resource Include="SkillImage\undying-soul-rip.png" />
+    <Resource Include="SkillImage\undying-tombstone.png" />
+    <Resource Include="SkillImage\magnus-empower.png" />
+    <Resource Include="SkillImage\magnus-reverse-polarity.png" />
+    <Resource Include="SkillImage\magnus-shockwave.png" />
+    <Resource Include="SkillImage\magnus-skewer.png" />
+    <Resource Include="SkillImage\abaddon-aphotic-shield.png" />
+    <Resource Include="SkillImage\abaddon-borrowed-time.png" />
+    <Resource Include="SkillImage\abaddon-mist-coil.png" />
+    <Resource Include="SkillImage\abaddon-curse-of-avernus.png" />
+    <Resource Include="SkillImage\anti-mage-blink.png" />
+    <Resource Include="SkillImage\anti-mage-mana-break.png" />
+    <Resource Include="SkillImage\anti-mage-mana-void.png" />
+    <Resource Include="SkillImage\anti-mage-spell-shield.png" />
+    <Resource Include="SkillImage\drow-ranger-frost-arrows.png" />
+    <Resource Include="SkillImage\drow-ranger-marksmanship.png" />
+    <Resource Include="SkillImage\drow-ranger-precision-aura.png" />
+    <Resource Include="SkillImage\drow-ranger-gust.png" />
+    <Resource Include="SkillImage\juggernaut-blade-dance.png" />
+    <Resource Include="SkillImage\juggernaut-blade-fury.png" />
+    <Resource Include="SkillImage\juggernaut-healing-ward.png" />
+    <Resource Include="SkillImage\juggernaut-omnislash.png" />
+    <Resource Include="SkillImage\mirana-sacred-arrow.png" />
+    <Resource Include="SkillImage\mirana-moonlight-shadow.png" />
+    <Resource Include="SkillImage\mirana-leap.png" />
+    <Resource Include="SkillImage\mirana-starstorm.png" />
+    <Resource Include="SkillImage\morphling-adaptive-strike.png" />
+    <Resource Include="SkillImage\morphling-morph-agility-gain.png" />
+    <Resource Include="SkillImage\morphling-morph-strength-gain.png" />
+    <Resource Include="SkillImage\morphling-waveform.png" />
+    <Resource Include="SkillImage\morphling-morph-replicate.png" />
+    <Resource Include="SkillImage\morphling-replicate.png" />
+    <Resource Include="SkillImage\phantom-lancer-doppelganger.png" />
+    <Resource Include="SkillImage\phantom-lancer-juxtapose.png" />
+    <Resource Include="SkillImage\phantom-lancer-phantom-rush.png" />
+    <Resource Include="SkillImage\phantom-lancer-spirit-lance.png" />
+    <Resource Include="SkillImage\vengeful-spirit-vengeance-aura.png" />
+    <Resource Include="SkillImage\vengeful-spirit-magic-missile.png" />
+    <Resource Include="SkillImage\vengeful-spirit-nether-swap.png" />
+    <Resource Include="SkillImage\vengeful-spirit-wave-of-terror.png" />
+    <Resource Include="SkillImage\riki-backstab.png" />
+    <Resource Include="SkillImage\riki-blink-strike.png" />
+    <Resource Include="SkillImage\riki-cloak-and-dagger.png" />
+    <Resource Include="SkillImage\riki-smoke-screen.png" />
+    <Resource Include="SkillImage\sniper-assassinate.png" />
+    <Resource Include="SkillImage\sniper-headshot.png" />
+    <Resource Include="SkillImage\sniper-shrapnel.png" />
+    <Resource Include="SkillImage\sniper-take-aim.png" />
+    <Resource Include="SkillImage\templar-assassin-meld.png" />
+    <Resource Include="SkillImage\templar-assassin-psi-blades.png" />
+    <Resource Include="SkillImage\templar-assassin-refraction.png" />
+    <Resource Include="SkillImage\templar-assassin-trap.png" />
+    <Resource Include="SkillImage\templar-assassin-psionic-trap.png" />
+    <Resource Include="SkillImage\luna-eclipse.png" />
+    <Resource Include="SkillImage\luna-lucent-beam.png" />
+    <Resource Include="SkillImage\luna-lunar-blessing.png" />
+    <Resource Include="SkillImage\luna-moon-glaive.png" />
+    <Resource Include="SkillImage\bounty-hunter-jinada.png" />
+    <Resource Include="SkillImage\bounty-hunter-shuriken-toss.png" />
+    <Resource Include="SkillImage\bounty-hunter-track.png" />
+    <Resource Include="SkillImage\bounty-hunter-shadow-walk.png" />
+    <Resource Include="SkillImage\ursa-earthshock.png" />
+    <Resource Include="SkillImage\ursa-enrage.png" />
+    <Resource Include="SkillImage\ursa-fury-swipes.png" />
+    <Resource Include="SkillImage\ursa-overpower.png" />
+    <Resource Include="SkillImage\gyrocopter-call-down.png" />
+    <Resource Include="SkillImage\gyrocopter-flak-cannon.png" />
+    <Resource Include="SkillImage\gyrocopter-homing-missile.png" />
+    <Resource Include="SkillImage\gyrocopter-rocket-barrage.png" />
+    <Resource Include="SkillImage\lone-druid-rabid.png" />
+    <Resource Include="SkillImage\lone-druid-summon-spirit-bear.png" />
+    <Resource Include="SkillImage\lone-druid-synergy.png" />
+    <Resource Include="SkillImage\lone-druid-battle-cry.png" />
+    <Resource Include="SkillImage\lone-druid-druid-form.png" />
+    <Resource Include="SkillImage\lone-druid-true-form.png" />
+    <Resource Include="SkillImage\naga-siren-ensnare.png" />
+    <Resource Include="SkillImage\naga-siren-mirror-image.png" />
+    <Resource Include="SkillImage\naga-siren-rip-tide.png" />
+    <Resource Include="SkillImage\naga-siren-song-of-the-siren.png" />
+    <Resource Include="SkillImage\naga-siren-song-of-the-siren-end.png" />
+    <Resource Include="SkillImage\troll-warlord-berserkers-rage.png" />
+    <Resource Include="SkillImage\troll-warlord-fervor.png" />
+    <Resource Include="SkillImage\troll-warlord-whirling-axes-%28melee%29.png" />
+    <Resource Include="SkillImage\troll-warlord-whirling-axes-%28ranged%29.png" />
+    <Resource Include="SkillImage\troll-warlord-battle-trance.png" />
+    <Resource Include="SkillImage\ember-spirit-activate-fire-remnant.png" />
+    <Resource Include="SkillImage\ember-spirit-flame-guard.png" />
+    <Resource Include="SkillImage\ember-spirit-searing-chains.png" />
+    <Resource Include="SkillImage\ember-spirit-sleight-of-fist.png" />
+    <Resource Include="SkillImage\ember-spirit-fire-remnant.png" />
+    <Resource Include="SkillImage\bloodseeker-blood-rite.png" />
+    <Resource Include="SkillImage\bloodseeker-bloodrage.png" />
+    <Resource Include="SkillImage\bloodseeker-rupture.png" />
+    <Resource Include="SkillImage\bloodseeker-thirst.png" />
+    <Resource Include="SkillImage\shadow-fiend-presence-of-the-dark-lord.png" />
+    <Resource Include="SkillImage\shadow-fiend-necromastery.png" />
+    <Resource Include="SkillImage\shadow-fiend-requiem-of-souls.png" />
+    <Resource Include="SkillImage\shadow-fiend-shadowraze.png" />
+    <Resource Include="SkillImage\razor-eye-of-the-storm.png" />
+    <Resource Include="SkillImage\razor-plasma-field.png" />
+    <Resource Include="SkillImage\razor-static-link.png" />
+    <Resource Include="SkillImage\razor-unstable-current.png" />
+    <Resource Include="SkillImage\venomancer-plague-ward.png" />
+    <Resource Include="SkillImage\venomancer-poison-nova.png" />
+    <Resource Include="SkillImage\venomancer-poison-sting.png" />
+    <Resource Include="SkillImage\venomancer-venomous-gale.png" />
+    <Resource Include="SkillImage\faceless-void-backtrack.png" />
+    <Resource Include="SkillImage\faceless-void-chronosphere.png" />
+    <Resource Include="SkillImage\faceless-void-time-lock.png" />
+    <Resource Include="SkillImage\faceless-void-time-walk.png" />
+    <Resource Include="SkillImage\phantom-assassin-blur.png" />
+    <Resource Include="SkillImage\phantom-assassin-coup-de-grace.png" />
+    <Resource Include="SkillImage\phantom-assassin-phantom-strike.png" />
+    <Resource Include="SkillImage\phantom-assassin-stifling-dagger.png" />
+    <Resource Include="SkillImage\viper-corrosive-skin.png" />
+    <Resource Include="SkillImage\viper-nethertoxin.png" />
+    <Resource Include="SkillImage\viper-poison-attack.png" />
+    <Resource Include="SkillImage\viper-viper-strike.png" />
+    <Resource Include="SkillImage\clinkz-death-pact.png" />
+    <Resource Include="SkillImage\clinkz-searing-arrows.png" />
+    <Resource Include="SkillImage\clinkz-strafe.png" />
+    <Resource Include="SkillImage\clinkz-skeleton-walk.png" />
+    <Resource Include="SkillImage\broodmother-incapacitating-bite.png" />
+    <Resource Include="SkillImage\broodmother-insatiable-hunger.png" />
+    <Resource Include="SkillImage\broodmother-spawn-spiderlings.png" />
+    <Resource Include="SkillImage\broodmother-spin-web.png" />
+    <Resource Include="SkillImage\weaver-geminate-attack.png" />
+    <Resource Include="SkillImage\weaver-shukuchi.png" />
+    <Resource Include="SkillImage\weaver-the-swarm.png" />
+    <Resource Include="SkillImage\weaver-time-lapse.png" />
+    <Resource Include="SkillImage\spectre-desolate.png" />
+    <Resource Include="SkillImage\spectre-dispersion.png" />
+    <Resource Include="SkillImage\spectre-reality.png" />
+    <Resource Include="SkillImage\spectre-spectral-dagger.png" />
+    <Resource Include="SkillImage\meepo-divided-we-stand.png" />
+    <Resource Include="SkillImage\meepo-earthbind.png" />
+    <Resource Include="SkillImage\meepo-geostrike.png" />
+    <Resource Include="SkillImage\meepo-poof.png" />
+    <Resource Include="SkillImage\nyx-assassin-impale.png" />
+    <Resource Include="SkillImage\nyx-assassin-mana-burn.png" />
+    <Resource Include="SkillImage\nyx-assassin-spiked-carapace.png" />
+    <Resource Include="SkillImage\nyx-assassin-vendetta.png" />
+    <Resource Include="SkillImage\slark-dark-pact.png" />
+    <Resource Include="SkillImage\slark-essence-shift.png" />
+    <Resource Include="SkillImage\slark-pounce.png" />
+    <Resource Include="SkillImage\slark-shadow-dance.png" />
+    <Resource Include="SkillImage\medusa-mana-shield.png" />
+    <Resource Include="SkillImage\medusa-mystic-snake.png" />
+    <Resource Include="SkillImage\medusa-split-shot.png" />
+    <Resource Include="SkillImage\medusa-stone-gaze.png" />
+    <Resource Include="SkillImage\terrorblade-conjure-image.png" />
+    <Resource Include="SkillImage\terrorblade-metamorphosis.png" />
+    <Resource Include="SkillImage\terrorblade-reflection.png" />
+    <Resource Include="SkillImage\terrorblade-sunder.png" />
+    <Resource Include="SkillImage\crystal-maiden-arcane-aura.png" />
+    <Resource Include="SkillImage\crystal-maiden-crystal-nova.png" />
+    <Resource Include="SkillImage\crystal-maiden-freezing-field.png" />
+    <Resource Include="SkillImage\crystal-maiden-frostbite.png" />
+    <Resource Include="SkillImage\puck-ethereal-jaunt.png" />
+    <Resource Include="SkillImage\puck-illusory-orb.png" />
+    <Resource Include="SkillImage\puck-phase-shift.png" />
+    <Resource Include="SkillImage\puck-waning-rift.png" />
+    <Resource Include="SkillImage\puck-dream-coil.png" />
+    <Resource Include="SkillImage\storm-spirit-ball-lightning.png" />
+    <Resource Include="SkillImage\storm-spirit-electric-vortex.png" />
+    <Resource Include="SkillImage\storm-spirit-overload.png" />
+    <Resource Include="SkillImage\storm-spirit-static-remnant.png" />
+    <Resource Include="SkillImage\windranger-focus-fire.png" />
+    <Resource Include="SkillImage\windranger-powershot.png" />
+    <Resource Include="SkillImage\windranger-shackleshot.png" />
+    <Resource Include="SkillImage\windranger-windrun.png" />
+    <Resource Include="SkillImage\zeus-arc-lightning.png" />
+    <Resource Include="SkillImage\zeus-lightning-bolt.png" />
+    <Resource Include="SkillImage\zeus-static-field.png" />
+    <Resource Include="SkillImage\zeus-thundergods-wrath.png" />
+    <Resource Include="SkillImage\lina-dragon-slave.png" />
+    <Resource Include="SkillImage\lina-fiery-soul.png" />
+    <Resource Include="SkillImage\lina-laguna-blade.png" />
+    <Resource Include="SkillImage\lina-light-strike-array.png" />
+    <Resource Include="SkillImage\shadow-shaman-ether-shock.png" />
+    <Resource Include="SkillImage\shadow-shaman-mass-serpent-ward.png" />
+    <Resource Include="SkillImage\shadow-shaman-shackles.png" />
+    <Resource Include="SkillImage\shadow-shaman-hex.png" />
+    <Resource Include="SkillImage\tinker-heat-seeking-missile.png" />
+    <Resource Include="SkillImage\tinker-laser.png" />
+    <Resource Include="SkillImage\tinker-march-of-the-machines.png" />
+    <Resource Include="SkillImage\tinker-rearm.png" />
+    <Resource Include="SkillImage\natures-prophet-natures-call.png" />
+    <Resource Include="SkillImage\natures-prophet-sprout.png" />
+    <Resource Include="SkillImage\natures-prophet-teleportation.png" />
+    <Resource Include="SkillImage\natures-prophet-wrath-of-nature.png" />
+    <Resource Include="SkillImage\enchantress-enchant.png" />
+    <Resource Include="SkillImage\enchantress-impetus.png" />
+    <Resource Include="SkillImage\enchantress-natures-attendants.png" />
+    <Resource Include="SkillImage\enchantress-untouchable.png" />
+    <Resource Include="SkillImage\jakiro-dual-breath.png" />
+    <Resource Include="SkillImage\jakiro-ice-path.png" />
+    <Resource Include="SkillImage\jakiro-liquid-fire.png" />
+    <Resource Include="SkillImage\jakiro-macropyre.png" />
+    <Resource Include="SkillImage\chen-holy-persuasion.png" />
+    <Resource Include="SkillImage\chen-penitence.png" />
+    <Resource Include="SkillImage\chen-test-of-faith-teleport.png" />
+    <Resource Include="SkillImage\chen-test-of-faith.png" />
+    <Resource Include="SkillImage\chen-hand-of-god.png" />
+    <Resource Include="SkillImage\silencer-arcane-curse.png" />
+    <Resource Include="SkillImage\silencer-glaives-of-wisdom.png" />
+    <Resource Include="SkillImage\silencer-global-silence.png" />
+    <Resource Include="SkillImage\silencer-last-word.png" />
+    <Resource Include="SkillImage\ogre-magi-bloodlust.png" />
+    <Resource Include="SkillImage\ogre-magi-fireblast.png" />
+    <Resource Include="SkillImage\ogre-magi-ignite.png" />
+    <Resource Include="SkillImage\ogre-magi-unrefined-fireblast.png" />
+    <Resource Include="SkillImage\spectre-haunt.png" />
+    <Resource Include="SkillImage\ogre-magi-multicast.png" />
+    <Resource Include="SkillImage\rubick-fade-bolt.png" />
+    <Resource Include="SkillImage\rubick-null-field.png" />
+    <Resource Include="SkillImage\rubick-telekinesis-land.png" />
+    <Resource Include="SkillImage\rubick-telekinesis.png" />
+    <Resource Include="SkillImage\rubick-spell-steal.png" />
+    <Resource Include="SkillImage\disruptor-glimpse.png" />
+    <Resource Include="SkillImage\disruptor-kinetic-field.png" />
+    <Resource Include="SkillImage\disruptor-static-storm.png" />
+    <Resource Include="SkillImage\disruptor-thunder-strike.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-chakra-magic.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-illuminate.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-mana-leak.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-recall.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-blinding-light.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-illuminate-end.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-spirit-form-illuminate.png" />
+    <Resource Include="SkillImage\keeper-of-the-light-spirit-form.png" />
+    <Resource Include="SkillImage\skywrath-mage-ancient-seal.png" />
+    <Resource Include="SkillImage\skywrath-mage-arcane-bolt.png" />
+    <Resource Include="SkillImage\skywrath-mage-concussive-shot.png" />
+    <Resource Include="SkillImage\skywrath-mage-mystic-flare.png" />
+    <Resource Include="SkillImage\oracle-false-promise.png" />
+    <Resource Include="SkillImage\oracle-fates-edict.png" />
+    <Resource Include="SkillImage\oracle-fortunes-end.png" />
+    <Resource Include="SkillImage\oracle-purifying-flames.png" />
+    <Resource Include="SkillImage\techies-focused-detonate.png" />
+    <Resource Include="SkillImage\techies-land-mines.png" />
+    <Resource Include="SkillImage\techies-stasis-trap.png" />
+    <Resource Include="SkillImage\techies-suicide.png" />
+    <Resource Include="SkillImage\techies-minefield-sign.png" />
+    <Resource Include="SkillImage\techies-remote-mines.png" />
+    <Resource Include="SkillImage\bane-brain-sap.png" />
+    <Resource Include="SkillImage\bane-enfeeble.png" />
+    <Resource Include="SkillImage\bane-fiends-grip.png" />
+    <Resource Include="SkillImage\bane-nightmare.png" />
+    <Resource Include="SkillImage\bane-nightmare-end.png" />
+    <Resource Include="SkillImage\lich-chain-frost.png" />
+    <Resource Include="SkillImage\lich-sacrifice.png" />
+    <Resource Include="SkillImage\lich-ice-armor.png" />
+    <Resource Include="SkillImage\lich-frost-blast.png" />
+    <Resource Include="SkillImage\lion-finger-of-death.png" />
+    <Resource Include="SkillImage\lion-earth-spike.png" />
+    <Resource Include="SkillImage\lion-mana-drain.png" />
+    <Resource Include="SkillImage\lion-hex.png" />
+    <Resource Include="SkillImage\witch-doctor-death-ward.png" />
+    <Resource Include="SkillImage\witch-doctor-maledict.png" />
+    <Resource Include="SkillImage\witch-doctor-paralyzing-cask.png" />
+    <Resource Include="SkillImage\witch-doctor-voodoo-restoration.png" />
+    <Resource Include="SkillImage\enigma-black-hole.png" />
+    <Resource Include="SkillImage\enigma-demonic-conversion.png" />
+    <Resource Include="SkillImage\enigma-malefice.png" />
+    <Resource Include="SkillImage\enigma-midnight-pulse.png" />
+    <Resource Include="SkillImage\necrophos-death-pulse.png" />
+    <Resource Include="SkillImage\necrophos-heartstopper-aura.png" />
+    <Resource Include="SkillImage\necrophos-reapers-scythe.png" />
+    <Resource Include="SkillImage\necrophos-sadist.png" />
+    <Resource Include="SkillImage\warlock-fatal-bonds.png" />
+    <Resource Include="SkillImage\warlock-chaotic-offering.png" />
+    <Resource Include="SkillImage\warlock-shadow-word.png" />
+    <Resource Include="SkillImage\warlock-upheaval.png" />
+    <Resource Include="SkillImage\queen-of-pain-blink.png" />
+    <Resource Include="SkillImage\queen-of-pain-shadow-strike.png" />
+    <Resource Include="SkillImage\queen-of-pain-sonic-wave.png" />
+    <Resource Include="SkillImage\queen-of-pain-scream-of-pain.png" />
+    <Resource Include="SkillImage\death-prophet-crypt-swarm.png" />
+    <Resource Include="SkillImage\death-prophet-exorcism.png" />
+    <Resource Include="SkillImage\death-prophet-silence.png" />
+    <Resource Include="SkillImage\death-prophet-witchcraft.png" />
+    <Resource Include="SkillImage\pugna-decrepify.png" />
+    <Resource Include="SkillImage\pugna-life-drain.png" />
+    <Resource Include="SkillImage\pugna-nether-blast.png" />
+    <Resource Include="SkillImage\pugna-nether-ward.png" />
+    <Resource Include="SkillImage\dazzle-poison-touch.png" />
+    <Resource Include="SkillImage\dazzle-shadow-wave.png" />
+    <Resource Include="SkillImage\dazzle-shallow-grave.png" />
+    <Resource Include="SkillImage\dazzle-weave.png" />
+    <Resource Include="SkillImage\leshrac-diabolic-edict.png" />
+    <Resource Include="SkillImage\leshrac-lightning-storm.png" />
+    <Resource Include="SkillImage\leshrac-pulse-nova.png" />
+    <Resource Include="SkillImage\leshrac-split-earth.png" />
+    <Resource Include="SkillImage\dark-seer-ion-shell.png" />
+    <Resource Include="SkillImage\dark-seer-surge.png" />
+    <Resource Include="SkillImage\dark-seer-vacuum.png" />
+    <Resource Include="SkillImage\dark-seer-wall-of-replica.png" />
+    <Resource Include="SkillImage\batrider-firefly.png" />
+    <Resource Include="SkillImage\batrider-flamebreak.png" />
+    <Resource Include="SkillImage\batrider-flaming-lasso.png" />
+    <Resource Include="SkillImage\batrider-sticky-napalm.png" />
+    <Resource Include="SkillImage\ancient-apparition-chilling-touch.png" />
+    <Resource Include="SkillImage\ancient-apparition-cold-feet.png" />
+    <Resource Include="SkillImage\ancient-apparition-ice-blast.png" />
+    <Resource Include="SkillImage\ancient-apparition-ice-vortex.png" />
+    <Resource Include="SkillImage\ancient-apparition-release.png" />
+    <Resource Include="SkillImage\invoker-exort.png" />
+    <Resource Include="SkillImage\invoker-invoke.png" />
+    <Resource Include="SkillImage\invoker-quas.png" />
+    <Resource Include="SkillImage\invoker-wex.png" />
+    <Resource Include="SkillImage\invoker-cold-snap.png" />
+    <Resource Include="SkillImage\invoker-alacrity.png" />
+    <Resource Include="SkillImage\invoker-emp.png" />
+    <Resource Include="SkillImage\invoker-ghost-walk.png" />
+    <Resource Include="SkillImage\invoker-tornado.png" />
+    <Resource Include="SkillImage\invoker-chaos-meteor.png" />
+    <Resource Include="SkillImage\invoker-forge-spirit.png" />
+    <Resource Include="SkillImage\invoker-ice-wall.png" />
+    <Resource Include="SkillImage\invoker-sun-strike.png" />
+    <Resource Include="SkillImage\invoker-deafening-blast.png" />
+    <Resource Include="SkillImage\outworld-devourer-arcane-orb.png" />
+    <Resource Include="SkillImage\outworld-devourer-astral-imprisonment.png" />
+    <Resource Include="SkillImage\outworld-devourer-essence-aura.png" />
+    <Resource Include="SkillImage\outworld-devourer-sanity-eclipse.png" />
+    <Resource Include="SkillImage\shadow-demon-disruption.png" />
+    <Resource Include="SkillImage\shadow-demon-shadow-poison-release.png" />
+    <Resource Include="SkillImage\shadow-demon-shadow-poison.png" />
+    <Resource Include="SkillImage\shadow-demon-soul-catcher.png" />
+    <Resource Include="SkillImage\shadow-demon-demonic-purge.png" />
+    <Resource Include="SkillImage\visage-grave-chill.png" />
+    <Resource Include="SkillImage\visage-gravekeepers-cloak.png" />
+    <Resource Include="SkillImage\visage-soul-assumption.png" />
+    <Resource Include="SkillImage\visage-summon-familiars.png" />
+    <Resource Include="MainAttributeImage\recipe.png" />
+    <Resource Include="NeutralImage\vhoul-assasin.png" />
+    <Resource Include="NeutralImage\mud-golem.png" />
+    <Resource Include="NeutralImage\satyr-tormenter.png" />
+    <Resource Include="NeutralImage\roshan.png" />
+    <Resource Include="NeutralImage\alpha-wolf.png" />
+    <Resource Include="NeutralImage\giant-wolf.png" />
+    <Resource Include="NeutralImage\ancient-black-dragon.png" />
+    <Resource Include="NeutralImage\ancient-black-drake.png" />
+    <Resource Include="NeutralImage\ancient-granite-golem.png" />
+    <Resource Include="NeutralImage\ancient-rumblehide.png" />
+    <Resource Include="NeutralImage\ancient-thunderhide.png" />
+    <Resource Include="NeutralImage\centaur-conqueror.png" />
+    <Resource Include="NeutralImage\centaur-courser.png" />
+    <Resource Include="NeutralImage\dark-troll-summoner.png" />
+    <Resource Include="NeutralImage\hill-troll.png" />
+    <Resource Include="NeutralImage\fell-spirit.png" />
+    <Resource Include="NeutralImage\ghost.png" />
+    <Resource Include="NeutralImage\harpy-scout.png" />
+    <Resource Include="NeutralImage\harpy-stormcrafter.png" />
+    <Resource Include="NeutralImage\hellbear.png" />
+    <Resource Include="NeutralImage\hellbear-smasher.png" />
+    <Resource Include="NeutralImage\hill-troll-berserker.png" />
+    <Resource Include="NeutralImage\hill-troll-priest.png" />
+    <Resource Include="NeutralImage\kobold.png" />
+    <Resource Include="NeutralImage\kobold-foreman.png" />
+    <Resource Include="NeutralImage\ogre-bruiser.png" />
+    <Resource Include="NeutralImage\ogre-frostmage.png" />
+    <Resource Include="NeutralImage\satyr-banisher.png" />
+    <Resource Include="NeutralImage\satyr-mindstealer.png" />
+    <Resource Include="NeutralImage\wildwing.png" />
+    <Resource Include="NeutralImage\wildwing-ripper.png" />
+    <Content Include="neutrals.xml" />
+    <Resource Include="NeutralSkillImage\envenomed-weapon.png" />
+    <Resource Include="NeutralSkillImage\spell-immunity.png" />
+    <Resource Include="NeutralSkillImage\satyr-shockwave.png" />
+    <Resource Include="NeutralSkillImage\satyr-unholy-aura.png" />
+    <Resource Include="NeutralSkillImage\roshan-strength-of-the-immortal.png" />
+    <Resource Include="NeutralSkillImage\roshan-bash.png" />
+    <Resource Include="NeutralSkillImage\roshan-slam.png" />
+    <Resource Include="NeutralSkillImage\roshan-spell-block.png" />
+    <Resource Include="NeutralSkillImage\alpha-wolfcritical-strike.png" />
+    <Resource Include="NeutralSkillImage\giant-wolfcritical-strike.png" />
+    <Resource Include="NeutralSkillImage\alpha-wolf-packleaders-aura.png" />
+    <Resource Include="NeutralSkillImage\ancient-black-dragon-splash-attack.png" />
+    <Resource Include="NeutralSkillImage\ancient-granite-golem-granite-aura.png" />
+    <Resource Include="NeutralSkillImage\ancient-thunderhide-slam.png" />
+    <Resource Include="NeutralSkillImage\ancient-thunderhide-frenzy.png" />
+    <Resource Include="NeutralSkillImage\centaur-conqueror-war-stomp.png" />
+    <Resource Include="NeutralSkillImage\dark-troll-summoner-ensnare.png" />
+    <Resource Include="NeutralSkillImage\dark-troll-summoner-raise-dead.png" />
+    <Resource Include="NeutralSkillImage\ghost-frost-attack.png" />
+    <Resource Include="NeutralSkillImage\harpy-stormcrafter-chain-lightning.png" />
+    <Resource Include="NeutralSkillImage\hellbear-smasher-swiftness-aura.png" />
+    <Resource Include="NeutralSkillImage\hellbear-smasher-thunder-clap.png" />
+    <Resource Include="NeutralSkillImage\hill-troll-priest-heal.png" />
+    <Resource Include="NeutralSkillImage\hill-troll-priest-mana-aura.png" />
+    <Resource Include="NeutralSkillImage\kobold-foreman-speed-aura.png" />
+    <Resource Include="NeutralSkillImage\ogre-frostmage-ice-armor.png" />
+    <Resource Include="NeutralSkillImage\satyr-mindstealer-mana-burn.png" />
+    <Resource Include="NeutralSkillImage\satyr-banisher-purge.png" />
+    <Resource Include="NeutralSkillImage\wildwing-ripper-tempest.png" />
+    <Resource Include="NeutralSkillImage\wildwing-ripper-toughness-aura.png" />
+    <Resource Include="NeutralSkillImage\wildwing-ripper-tornado-%28Wildkin%29.png" />
+    <Content Include="neutralSkills.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="SkillImage\winter-wyvern-arctic-burn.png" />
+    <Resource Include="SkillImage\winter-wyvern-cold-embrace.png" />
+    <Resource Include="SkillImage\winter-wyvern-splinter-blast.png" />
+    <Resource Include="SkillImage\winter-wyvern-winters-curse.png" />
+    <Content Include="skills.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

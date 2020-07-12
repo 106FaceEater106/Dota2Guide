@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SKILLS>
+
+  <SKILL>
+    <OWNER>Vhoul Assasin</OWNER>
+    <TITLE>Envenomed Weapon</TITLE>
+    <DESCRIPTION>The Vhoul Assasin has soaked his weapons in his own blend of painful predator venoms.Heroes recover from the poison more quickly.</DESCRIPTION>
+    <IMAGE>envenomed-weapon.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Enemies,Damage:Magical,Damage per Second: 2,Hero Duration: 10,Non-Hero Duration: 20</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Mud Golem</OWNER>
+    <TITLE>Spell Immunity</TITLE>
+    <DESCRIPTION>This creature does not feel the effects of most magical spells.</DESCRIPTION>
+    <IMAGE>spell-immunity.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Satyr Tormenter</OWNER>
+    <TITLE>Shockwave</TITLE>
+    <DESCRIPTION>The Satyr Tormenter tears open an unstable rift to the underworld, creating a shockwave that travels in a line along the ground, dealing damage to enemies it hits.</DESCRIPTION>
+    <IMAGE>satyr-shockwave.png</IMAGE>
+    <MANA>100</MANA>
+    <COOLDOWN>8</COOLDOWN>
+    <EXTRA>Ability:Target Unit-Target Point,Affects:Enemies,Damage:MagicalCast Range: 700,Starting Radius: 180,Distance: 800,End Radius: 200,Damage: 125</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Satyr Tormenter</OWNER>
+    <TITLE>Unholy Aura</TITLE>
+    <DESCRIPTION>The Satyr Tormenter's demonic communion allows him to emanate regenerative power, increasing the health regeneration of himself and all nearby allies.</DESCRIPTION>
+    <IMAGE>satyr-unholy-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Allies,Radius: 900,Health Regen Bonus: 4</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Roshan</OWNER>
+    <TITLE>Spell Block</TITLE>
+    <DESCRIPTION>Roshan will block one targeted spell.</DESCRIPTION>
+    <IMAGE>roshan-spell-block.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>15</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Roshan</OWNER>
+    <TITLE>Bash</TITLE>
+    <DESCRIPTION>Roshan has a chance to stun on attack.</DESCRIPTION>
+    <IMAGE>roshan-bash.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Enemies,Damage:Magical,Chance: 15%,Damage: 50,Stun Duration: 1.65</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Roshan</OWNER>
+    <TITLE>Slam</TITLE>
+    <DESCRIPTION>Roshan slams the ground, damaging and slowing all nearby enemies. Slam's damage will increase every 4 minutes.</DESCRIPTION>
+    <IMAGE>roshan-slam.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>10</COOLDOWN>
+    <EXTRA>Ability:No Target,Affects:Enemies,Damage:Magical,Effect Radius: 350,Base Damage: 70,Extra Damage per 4 Minutes: 20,Move Speed Slow: 50%,Attack Speed Slow: 50,Hero Duration: 2,Non-Hero Duration: 4</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Roshan</OWNER>
+    <TITLE>Strength of the Immortal</TITLE>
+    <DESCRIPTION>Roshan possesses numerous protective abilities, including magic resistance and increasing armor, health, attack damage and Slam damage as time passes. Every illusion attacking Roshan is instantly destroyed. Roshan has phased movement.</DESCRIPTION>
+    <IMAGE>roshan-strength-of-the-immortal.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self,Magic Resistance Bonus: 75%,Armor Bonus per 4 Minutes: 0.5,Max Health Bonus per 4 Minutes: 500,Attack Damage Bonus per 4 Minutes: 10</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Alpha Wolf</OWNER>
+    <TITLE>Critical Strike</TITLE>
+    <DESCRIPTION>The cruel Alpha Wolf attacks his enemy's unprotected vitals at every opportunity, inflicting critical damage.</DESCRIPTION>
+    <IMAGE>alpha-wolfcritical-strike.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Enemies,Proc Chance: 20%,Critical Damage: 200%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Alpha Wolf</OWNER>
+    <TITLE>Packleader's Aura</TITLE>
+    <DESCRIPTION>The Alpha Wolf's ruthless attacks do extra damage. His commanding presence inspires nearby allies to attack ruthlessly as well.</DESCRIPTION>
+    <IMAGE>alpha-wolf-packleaders-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Allies,Radius: 900,Attack Damage Bonus: 30%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Giant Wolf</OWNER>
+    <TITLE>Critical Strike</TITLE>
+    <DESCRIPTION>The Giant Wolf's ferocious attacks occasionally tear a vital tendon, inflicting critical damage.</DESCRIPTION>
+    <IMAGE>alpha-wolfcritical-strike.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Enemies,Proc Chance: 20%,Critical Damage: 200%</EXTRA>
+  </SKILL>
+
+
+  <SKILL>
+    <OWNER>Ancient Black Dragon</OWNER>
+    <TITLE>Splash Attack</TITLE>
+    <DESCRIPTION>The Black Dragon's explosive attacks are felt by all nearby enemies. Units closer to the blast take more damage.</DESCRIPTION>
+    <IMAGE>ancient-black-dragon-splash-attack.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Enemies,Damage:Magical,Close Range:50,Close Damage:100%,Mid Range:150,Mid Damage:50%,Far Range:250,Far Damage:25%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Black Dragon</OWNER>
+    <TITLE>Spell Immunity</TITLE>
+    <DESCRIPTION>This creature does not feel the effects of most magical spells.</DESCRIPTION>
+    <IMAGE>spell-immunity.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Granite Golem</OWNER>
+    <TITLE>Granite Aura</TITLE>
+    <DESCRIPTION>Increases the health capacity of nearby units.</DESCRIPTION>
+    <IMAGE>ancient-granite-golem-granite-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Allies,Radius: 900,Health Bonus: 15%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Granite Golem</OWNER>
+    <TITLE>Spell Immunity</TITLE>
+    <DESCRIPTION>This creature does not feel the effects of most magical spells.</DESCRIPTION>
+    <IMAGE>spell-immunity.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Rock Golem</OWNER>
+    <TITLE>Spell Immunity</TITLE>
+    <DESCRIPTION>This creature does not feel the effects of most magical spells.</DESCRIPTION>
+    <IMAGE>spell-immunity.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Rumblehide</OWNER>
+    <TITLE>Spell Immunity</TITLE>
+    <DESCRIPTION>This creature does not feel the effects of most magical spells.</DESCRIPTION>
+    <IMAGE>spell-immunity.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Thunderhide</OWNER>
+    <TITLE>Slam</TITLE>
+    <DESCRIPTION>The Ancient Thunderhide slams his mammoth body against the ground. The shock damages nearby enemies and throws them off their footing. Heroes regain their balance more quickly.</DESCRIPTION>
+    <IMAGE>ancient-thunderhide-slam.png</IMAGE>
+    <MANA>90</MANA>
+    <COOLDOWN>6</COOLDOWN>
+    <EXTRA>Ability:No Target,Affects:Enemies,Damage:Magical,Radius: 250,Damage: 70,Move Speed Slow: 25%,Hero Slow Duration: 2,Non-Hero Slow Duration: 4</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Thunderhide</OWNER>
+    <TITLE>Frenzy</TITLE>
+    <DESCRIPTION>The Ancient Thunderhide works himself into a frenzy, increasing his attack speed.</DESCRIPTION>
+    <IMAGE>ancient-thunderhide-frenzy.png</IMAGE>
+    <MANA>50</MANA>
+    <COOLDOWN>8</COOLDOWN>
+    <EXTRA>Ability:No Target,Affects:Self,Attack Speed Bonus: 75,Duration: 8</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ancient Thunderhide</OWNER>
+    <TITLE>Spell Immunity</TITLE>
+    <DESCRIPTION>This creature does not feel the effects of most magical spells.</DESCRIPTION>
+    <IMAGE>spell-immunity.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Self</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Centaur Conqueror</OWNER>
+    <TITLE>War Stomp</TITLE>
+    <DESCRIPTION>The Centaur Conqueror's powerful hooves stomp the ground, stunning and damaging nearby enemies. Heroes recover more quickly.</DESCRIPTION>
+    <IMAGE>centaur-conqueror-war-stomp.png</IMAGE>
+    <MANA>100</MANA>
+    <COOLDOWN>20</COOLDOWN>
+    <EXTRA>Ability:No Target,Affects:Enemies,Damage:Magical,Radius: 250,Damage: 25,Hero Stun Duration: 2,Non-Hero Stun Duration: 3</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Dark Troll Summoner</OWNER>
+    <TITLE>Ensnare</TITLE>
+    <DESCRIPTION>The Dark Troll Summoner tosses netting around an enemy's feet, briefly immobilizing the unit, though the unit can still attack and use abilities. Interrupts channeling abilities.</DESCRIPTION>
+    <IMAGE>dark-troll-summoner-ensnare.png</IMAGE>
+    <MANA>150</MANA>
+    <COOLDOWN>20</COOLDOWN>
+    <EXTRA>Ability:Target Unit,Affects:Enemies,Cast Range: 550,Duration: 1.75</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Dark Troll Summoner</OWNER>
+    <TITLE>Raise Dead</TITLE>
+    <DESCRIPTION>The Dark Troll Summoner stirs the ground underfoot, raising the remains of trolls long dead, bringing to life two Skeleton Warriors who will fight at his side.</DESCRIPTION>
+    <IMAGE>dark-troll-summoner-raise-dead.png</IMAGE>
+    <MANA>50</MANA>
+    <COOLDOWN>25</COOLDOWN>
+    <EXTRA>Ability:No Target,Affects:Enemies,Corpse Search Radius: 600,Number of Skeletons: 2,Duration: 40</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ghost</OWNER>
+    <TITLE>Frost Attack</TITLE>
+    <DESCRIPTION>The Ghost launches an eerie attack that chills her enemies to their bones.</DESCRIPTION>
+    <IMAGE>ghost-frost-attack.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Passive,Affects:Enemies,Move Speed Slow: 20%,Attack Speed Slow: 20,Duration: 1.5</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Harpy Stormcrafter</OWNER>
+    <TITLE>Chain Lightning</TITLE>
+    <DESCRIPTION>The Harpy Stormcrafter releases a high-voltage bolt of electricity at the target enemy, dealing damage. The bolt jumps to other nearby enemies, losing power with each jump.</DESCRIPTION>
+    <IMAGE>harpy-stormcrafter-chain-lightning.png</IMAGE>
+    <MANA>50</MANA>
+    <COOLDOWN>4</COOLDOWN>
+    <EXTRA>Ability:Target Unit,Affects:Enemies,Damage:Magical,Cast Range: 900,Bounce Distance: 500,Number of Bounces: 4,Base Damage: 140,Bounce Damage Reduction: 25%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Hellbear Smasher</OWNER>
+    <TITLE>Thunder Clap</TITLE>
+    <DESCRIPTION>The Hellbear Smasher claps his massive hands together, creating a deafening blast. The blast damages nearby enemies and throws them off their footing.</DESCRIPTION>
+    <IMAGE>hellbear-smasher-thunder-clap.png</IMAGE>
+    <MANA>100</MANA>
+    <COOLDOWN>12</COOLDOWN>
+    <EXTRA>Ability:No Target,Affects:Enemies,Damage:Magical,Radius: 300,Damage: 150,Move Speed Slow: 25%,Attack Speed Slow: 25,Slow Duration: 3</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Hellbear Smasher</OWNER>
+    <TITLE>Swiftness Aura</TITLE>
+    <DESCRIPTION>The seasoned Hellbear Smasher attacks more quickly and inspires nearby allies to follow suit.</DESCRIPTION>
+    <IMAGE>hellbear-smasher-swiftness-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Allies,Radius: 900,Attack Speed Bonus: 15</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Hill Troll Priest</OWNER>
+    <TITLE>Heal</TITLE>
+    <DESCRIPTION>The Hill Troll Priest lays his holy blessing upon the target ally, replenishing some health.</DESCRIPTION>
+    <IMAGE>hill-troll-priest-heal.png</IMAGE>
+    <MANA>5</MANA>
+    <COOLDOWN>0.5</COOLDOWN>
+    <EXTRA>Ability:Autocast,Affects:Allies,Cast Range: 350,Heal: 15</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Hill Troll Priest</OWNER>
+    <TITLE>Mana Aura</TITLE>
+    <DESCRIPTION>Provides bonus mana regeneration to all nearby allies.</DESCRIPTION>
+    <IMAGE>hill-troll-priest-mana-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Allies,Radius: 900,Mana Regen Bonus: 2</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Kobold Foreman</OWNER>
+    <TITLE>Speed Aura</TITLE>
+    <DESCRIPTION>The Kobold Foreman's cruel efficiency increases his movement speed and the movement speed of all nearby allies.</DESCRIPTION>
+    <IMAGE>kobold-foreman-speed-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Allies,Radius: 900,Move Speed Bonus: 12%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Ogre Frostmage</OWNER>
+    <TITLE>Ice Armor</TITLE>
+    <DESCRIPTION>The Ogre Frostmage summons an invisible layer of icy air that surrounds the target friendly unit, increasing its armor and temporarily slowing any melee enemies that dare attack it.</DESCRIPTION>
+    <IMAGE>ogre-frostmage-ice-armor.png</IMAGE>
+    <MANA>40</MANA>
+    <COOLDOWN>5</COOLDOWN>
+    <EXTRA>Ability:Target Unit,Affects:Allies,Armor Bonus: 8,Move Speed Slow: 30%,Attack Speed Slow: 20,Armor Duration: 45,Slow Duration: 5</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Satyr Banisher</OWNER>
+    <TITLE>Purge</TITLE>
+    <DESCRIPTION>The Satyr Banisher knows every trick in the book, allowing him to remove debuffs from allies or buffs from enemies. His trickery also slows the enemy's movement. If the enemy is a summoned unit or an illusion, it takes damage as well.</DESCRIPTION>
+    <IMAGE>satyr-banisher-purge.png</IMAGE>
+    <MANA>120</MANA>
+    <COOLDOWN>5</COOLDOWN>
+    <EXTRA>Ability:Target Unit,Affects:Units,Damage:Magical,Cast Range: 350,Move Speed Slow: 100%,Damage to Summons: 400,Slow Duration: 5</EXTRA>
+  </SKILL>
+
+
+  <SKILL>
+    <OWNER>Satyr Mindstealer</OWNER>
+    <TITLE>Mana Burn</TITLE>
+    <DESCRIPTION>The Satyr Mindstealer removes a fragment of his enemy's soul, burning away some mana and dealing damage equal to the amount of mana burned.</DESCRIPTION>
+    <IMAGE>satyr-mindstealer-mana-burn.png</IMAGE>
+    <MANA>50</MANA>
+    <COOLDOWN>18</COOLDOWN>
+    <EXTRA>Ability:Target Unit,Damage:Magical,Affects:Enemies,Cast Range: 600,Mana Burned: 100,Mana Burned as Damage: 100%</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Wildwing Ripper</OWNER>
+    <TITLE>Tornado</TITLE>
+    <DESCRIPTION>The Wildwing Ripper calls on the spirit of the wind, creating a sentient Tornado that he can control. The Tornado slows nearby enemies and does damage. It is invulnerable and can move anywhere.</DESCRIPTION>
+    <IMAGE>wildwing-ripper-tornado-(Wildkin).png</IMAGE>
+    <MANA>200</MANA>
+    <COOLDOWN>70</COOLDOWN>
+    <EXTRA>Ability:Target Point / Channeled,Affects:Enemies,Cast Range: 500,Max Channel Time: 40</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Wildwing Ripper</OWNER>
+    <TITLE>Toughness Aura</TITLE>
+    <DESCRIPTION>The Wildwing Ripper's fury numbs it to attacks and inspires nearby allies to withstand more blows.</DESCRIPTION>
+    <IMAGE>wildwing-ripper-toughness-aura.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Allies,Affects:Aura,Radius: 900,Armor Bonus: 3</EXTRA>
+  </SKILL>
+
+  <SKILL>
+    <OWNER>Wildwing Ripper</OWNER>
+    <TITLE>Tempest</TITLE>
+    <DESCRIPTION>The Tornado's overpowering winds slow all nearby enemies, flinging debris at them and inflicting damage every second. Enemies closer to the center of the Tornado take more damage.</DESCRIPTION>
+    <IMAGE>wildwing-ripper-tempest.png</IMAGE>
+    <MANA>0</MANA>
+    <COOLDOWN>0</COOLDOWN>
+    <EXTRA>Ability:Aura,Affects:Enemies,Damage:Magical,Far Damage Radius: 600,Close Damage Radius: 150,Move Speed Slow: 15%,Attack Speed Slow: 15,Close Damage per Second: 45,Far Damage per Second: 15</EXTRA>
+  </SKILL>
+  
+</SKILLS>
